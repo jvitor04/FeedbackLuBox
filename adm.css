@@ -1,0 +1,26 @@
+#feedbacks-container {
+    max-height: 400px; /* Defina um tamanho máximo para a área de feedbacks */
+    overflow-y: scroll; /* Adiciona a rolagem vertical */
+    padding: 100px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-top: 20px;
+}
+img{
+    width: 100px;
+    height: auto;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('logo lubox.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: -1;
+    pointer-events: none;
+}

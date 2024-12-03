@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    text-align: center;
+    position: relative;
+    overflow: auto;
+    
+    }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34699D;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 300px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #2384df;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+main {
+    padding-top: 100px; /* Para garantir que o conteúdo não fique escondido atrás do cabeçalho fixo */
+}
+
+textarea {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    direction: rtl;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating input:checked ~ label {
+    color: gold;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+button {
+    background-color: rgb(230, 226, 221);
+    border: none;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2384df;
+    color: white;
+}
+
+.instagram-link,
+.phone {
+    text-decoration: none;
+    color: #2384df;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #2384df;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.instagram-link:hover,
+.phone:hover {
+    background-color: #2384df;
+    color: white;
+    border-color: white;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('logo lubox.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    textarea {
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .rating label {
+        font-size: 1.5rem;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+}
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+}
+
